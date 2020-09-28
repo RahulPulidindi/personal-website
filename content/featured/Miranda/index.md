@@ -12,7 +12,7 @@ tech:
 showInProjects: true
 ---
 
-Your one stop for police stops. Uses machine learning to combat police brutality by documenting police interactions, guiding the user to protect their Miranda rights, and inducing community policing
+Your one stop for police stops. Uses machine learning to combat police brutality by documenting police interactions, guiding the user to protect their Miranda rights, and inducing community policing.
 
 ---
 

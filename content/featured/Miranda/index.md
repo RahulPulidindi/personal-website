@@ -1,9 +1,9 @@
 ---
-date: '4'
+date: '5'
 title: 'Miranda'
 cover: './demo.png'
 github: 'https://github.com/RahulPulidindi/MIRANDA'
-external: ''
+external: 'https://www.youtube.com/watch?v=jtJp1VVpyNQ&feature=share'
 tech:
   - Python
   - NLP

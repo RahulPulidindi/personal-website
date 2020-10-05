@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
+  const skills = ['Java', 'Python', 'C/C++', 'Node.js', 'TensorFlow', 'scikit-learn'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,19 +141,37 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Rahul, a software engineer based in Seattle, WA.</p>
-
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              Hello! I'm Rahul, a third-year undergraduate studying Electrical & Computer
+              Engineering + Math at the{' '}
+              <a href="https://www.ece.uw.edu/">University of Washington</a>.
             </p>
 
             <p>
-              Shortly after graduating from{' '}
-              <a href="https://www.ccis.northeastern.edu">Northeastern University</a>, I joined the
-              engineering team at <a href="https://www.upstatement.com">Upstatement</a> where I work
-              on a wide variety of interesting and meaningful projects on a daily basis.
+              I most recently interned at{' '}
+              <a href="https://www.pwc.com/us/en/services/consulting/analytics.html">PwC</a> as an
+              ML Engineer, where I used deep learning to develop dynamic pricing strategies &
+              analyze financial portfolios.
+            </p>
+
+            <p>
+              In the past, I've worked as a Controls & Power Engineer at{' '}
+              <a href="https://www.hyperloop.io/">Washington Hyperloop</a> to explore future tech
+              that has the potential to drastically change society, and as a Research Assistant at
+              the <a href="https://www.ipd.uw.edu/">Institute for Protein Design</a> to understand
+              how AI & healthcare interact to solve incurable disorders.
+            </p>
+
+            <p>
+              Due to these diverse experiences, I'm able to look at problems from different lenses &
+              combine my skills to build noteworthy products. In the long run, I wish to use
+              technology to create systems that can better the communities around us, especially the
+              underprivileged.
+            </p>
+
+            <p>
+              Some issues I care about are: digital healthcare, accessible education, inclusive
+              economic growth, and climate change.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

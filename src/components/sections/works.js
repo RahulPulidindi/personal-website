@@ -249,7 +249,9 @@ const Works = () => {
         {worksData &&
           worksData.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { title, url, company, range } = frontmatter;
+            // Uncomment below line for full details
+            // const { title, url, company, range } = frontmatter;
+            const { title, company } = frontmatter;
 
             return (
               <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -263,14 +265,16 @@ const Works = () => {
                   <h3>
                     <span>{title}</span>
                     <span className="company">
-                      &nbsp;@&nbsp;
-                      <a href={url} className="inline-link">
-                        {company}
-                      </a>
+                      {/* uncomment this if you want to add links later on */}
+                      {/* &nbsp;@&nbsp; */}
+                      {/* <a href={url} className="inline-link"> */}
+                      {company}
+                      {/* </a> */}
                     </span>
                   </h3>
 
-                  <p className="range">{range}</p>
+                  {/* uncomment below line for date ranges */}
+                  {/* <p className="range">{range}</p> */}
 
                   <div dangerouslySetInnerHTML={{ __html: html }} />
                 </StyledTabContent>

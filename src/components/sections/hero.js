@@ -30,7 +30,7 @@ const StyledHeroSection = styled.section`
 
   p {
     margin: 20px 0 0;
-    max-width: 500px;
+    max-width: 740px;
   }
 
   .email-link {
@@ -49,11 +49,12 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Rahul Pulidindi.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const three = <h3 className="medium-heading">I build future tech using software.</h3>;
   const four = (
     <p>
-      I'm a software engineer based in Seattle, WA specializing in building (and occasionally
-      designing) exceptional websites, applications, and everything in between.
+      I'm an aspiring product manager based in Seattle, WA specializing in software engineering +
+      machine learning. I'm driven to build products that positively impact society & shape the
+      future.
     </p>
   );
   const five = (

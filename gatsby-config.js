@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'Rahul Pulidindi',
     description:
-      'Brittany Chiang is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+      'Rahul is an aspiring product manager specializing in software engineering & machine learning, and is driven to build products that positively impact society & shape the future.',
+    siteUrl: 'https://rahulpulidindi.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@Rahul_Pulidindi',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

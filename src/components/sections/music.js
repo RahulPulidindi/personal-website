@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import styled from 'styled-components';
 import { getPages } from '../../services/notion';
 import { Stack, Card, Box, LinearProgress } from '@mui/material';
+const json = require('../../../src/data/reviews.json');
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -122,20 +123,26 @@ const Music = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [nextPageCalled, setNextPageCalled] = useState(0);
 
+  //   useEffect(() => {
+  //     const getNotion = async () => {
+  //       let results = [];
+  //       setLoading(true);
+
+  //       results = await getPages(lastPageId);
+  //       setLoading(false);
+
+  //       setLastPageId(results[results.length - 1]?.id);
+  //       setPosts(posts.concat(results.slice(0, 10)));
+  //     };
+
+  //     getNotion();
+  //   }, [nextPageCalled]);
+
   useEffect(() => {
-    const getNotion = async () => {
-      let results = [];
-      setLoading(true);
-
-      results = await getPages(lastPageId);
-      setLoading(false);
-
-      setLastPageId(results[results.length - 1]?.id);
-      setPosts(posts.concat(results.slice(0, 10)));
-    };
-
-    getNotion();
-  }, [nextPageCalled]);
+    setLoading(true);
+    setPosts(json);
+    setLoading(false);
+  }, []);
 
   const incrementPage = () => {
     setPageNumber(pageNumber + 1);

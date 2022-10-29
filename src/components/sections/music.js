@@ -62,7 +62,7 @@ const StyledHeroSection = styled.section`
 
   .resume-button {
     ${({ theme }) => theme.mixins.smallButton};
-    margin-left: 15px;
+    // margin-left: 15px;
     font-size: var(--fz-xs);
   }
 
@@ -199,7 +199,7 @@ const Music = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              width: '100%',
+              width: `${window.innerWidth > 768 ? '85%' : '100%'}`,
               marginTop: '8px',
             }}>
             <button

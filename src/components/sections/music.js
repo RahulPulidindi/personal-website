@@ -157,7 +157,7 @@ const Music = () => {
     <StyledHeroSection style={{ marginTop: '48px' }}>
       <div style={{ textAlign: 'center' }}>
         <h2 style={{ fontSize: '44px', color: 'whitesmoke' }}>ALBUM REVIEWS</h2>
-        <h1 style={{ marginBottom: '32px' }}>Some music I've been listening to since 2020.</h1>
+        <h1 style={{ marginBottom: '32px' }}>Some music I've been tracking since 2020.</h1>
       </div>
       {posts.length <= 0 || loading ? (
         <Box sx={{ width: '60%', margin: 'auto' }}>

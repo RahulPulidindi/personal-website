@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect, Fragment, useRef } from 'react';
 import styled from 'styled-components';
 import { getPages } from '../../services/notion';
 import { Stack, Card, Box, LinearProgress } from '@mui/material';
@@ -138,6 +138,8 @@ const Music = () => {
   //     getNotion();
   //   }, [nextPageCalled]);
 
+  const titleRef = useRef();
+
   useEffect(() => {
     setLoading(true);
     setPosts(json);
@@ -153,8 +155,12 @@ const Music = () => {
     setPageNumber(pageNumber - 1);
   };
 
+  const handleBackClick = () => {
+    titleRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <StyledHeroSection style={{ marginTop: '48px' }}>
+    <StyledHeroSection style={{ marginTop: '48px' }} ref={titleRef}>
       <div style={{ textAlign: 'center' }}>
         <h2 style={{ fontSize: '44px', color: 'whitesmoke' }}>ALBUM REVIEWS</h2>
         <h1 style={{ marginBottom: '32px' }}>Some music I've been tracking since 2020.</h1>
@@ -208,11 +214,17 @@ const Music = () => {
                 if (pageNumber > 1) {
                   decrementPage();
                 }
+                handleBackClick();
               }}>
               Prev
             </button>
             <h1 style={{ fontSize: '20px', color: 'whitesmoke' }}>{pageNumber} / 22 </h1>
-            <button className="resume-button" onClick={incrementPage}>
+            <button
+              className="resume-button"
+              onClick={() => {
+                incrementPage();
+                handleBackClick();
+              }}>
               Next
             </button>
           </div>
